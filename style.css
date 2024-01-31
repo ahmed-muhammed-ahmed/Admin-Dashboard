@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #339af0;
+  --yellow-color: #fbbf24;
+  --primary-gray: #e5e7eb;
+  --secondary-gray: #64748b;
+  --white: #fff;
+  --text-color: #1e293b;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 1fr 8fr;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: var(--primary-color);
+  grid-row: 1/-1;
+  padding: 2.4rem 0 0 2.4rem;
+}
+
+.dashboard {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.dashboard svg {
+  width: 7.4rem;
+  height: 7.4rem;
+}
+
+.dashboard a {
+  font-size: 3rem;
+}
+
+.homes,
+.settings {
+  padding-left: 2rem;
+}
+
+.home,
+.profile,
+.message,
+.history,
+.task,
+.communities,
+.setting,
+.support,
+.privacy {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.support {
+  margin: 1.6rem 0;
+}
+
+.profile,
+.message,
+.history,
+.task,
+.communities {
+  margin-top: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.homes {
+  margin-top: 4rem;
+  margin-bottom: 9.6rem;
+}
+
+.header {
+  background-color: #f87171;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+}
+
+.main {
+  background-color: #22c55e;
+  grid-row: 2/4;
+}
+
+.sidebar svg {
+  fill: var(--white);
+}
+
+svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+img {
+  height: 128px;
+  width: 128px;
+}
