@@ -94,12 +94,111 @@ a {
   margin-bottom: 9.6rem;
 }
 
+.sidebar svg {
+  fill: var(--white);
+}
+
 .header {
-  background-color: #f87171;
   display: grid;
   grid-template-columns: 4fr 1fr;
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
+  padding: 2rem 4rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.9);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar svg {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.search-bar input {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  margin-left: 2.4rem;
+  border: none;
+  background-color: var(--primary-gray);
+  outline: none;
+  transition: all 1s ease;
+}
+
+.search-bar input:focus {
+  border: 2px solid #475569;
+  transform: scaleX(1.01);
+}
+
+.admin {
+  display: flex;
+  gap: 2rem;
+  align-self: flex-end;
+}
+
+.info {
+  padding-top: 3.2rem;
+}
+
+.greet {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.admin img {
+  height: 12.8rem;
+  width: 12.8rem;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.admin-name {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.admin-profile img {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  outline: none;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: #5caef3;
 }
 
 .main {
@@ -107,16 +206,7 @@ a {
   grid-row: 2/4;
 }
 
-.sidebar svg {
-  fill: var(--white);
-}
-
 svg {
   width: 3rem;
   height: 3rem;
-}
-
-img {
-  height: 128px;
-  width: 128px;
 }
